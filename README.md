@@ -39,13 +39,13 @@ Ce projet est sous licence [MIT].
 
 ## Crédits des images
 
-|                          image                           |                                 Auteur / Licence                                 |
-|:--------------------------------------------------------:|:--------------------------------------------------------------------------------:|
-|                          ![]()                           |                            Générateur d’image IA Bing                            |
-|                          ![]()                           |                            Générateur d’image IA Bing                            |
-|                          ![]()                           |                            Générateur d’image IA Bing                            |
-|                          ![]()                           |                            Générateur d’image IA Bing                            |
-|                          ![]()                           |                            Générateur d’image IA Bing                            |
-| ![](./src/resources/images/ammo.png){width="30" height="30"} |                            Générateur d’image IA Bing                            |
-|          ![](./src/resources/images/ground.png)          | ![décor - Cupnooble](https://cupnooble.itch.io/sprout-lands-asset-pack?download) |
-|           ![](./src/resources/images/vert.png)           |        ![Héros - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
+|                                      image                                      |                                Auteur / Licence                                 |
+|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|  <img src="./src/resources/images/mine.png" alt="ammo" width="50" height="50">  |                           Générateur d’image IA Bing                            |
+| <img src="./src/resources/images/health.png" alt="ammo" width="50" height="50"> |                           Générateur d’image IA Bing                            |
+| <img src="./src/resources/images/barrel.png" alt="ammo" width="30" height="50"> |                           Générateur d’image IA Bing                            |
+|  <img src="./src/resources/images/wall.png" alt="ammo" width="50" height="50">  |                           Générateur d’image IA Bing                            |
+|  <img src="./src/resources/images/bomb.png" alt="ammo" width="50" height="50">  |                     [bomb](https://www.remove.bg/fr/upload)                     |
+|  <img src="./src/resources/images/ammo.png" alt="ammo" width="50" height="50">  |        [ammo - Freepik](https://fr.freepik.com/icone/munitions_3836821)         |
+| <img src="./src/resources/images/ground.png" alt="ammo" width="50" height="50"> | [décor - Cupnooble](https://cupnooble.itch.io/sprout-lands-asset-pack?download) |
+|  <img src="./src/resources/images/vert.png" alt="ammo" width="20" height="30">  |        [héros - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
