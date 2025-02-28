@@ -74,7 +74,7 @@ public class PlayerGUI extends JFrame implements PlayerWithLeaderboard {
     }
 
     /**
-     * Affiche la partie principal du jeu.
+     * Affiche la partie principale du jeu.
      */
     public void showGameplay() {
         this.getContentPane().removeAll();

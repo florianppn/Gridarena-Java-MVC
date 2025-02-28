@@ -35,7 +35,7 @@ Ce projet est sous licence [MIT].
 
 ## Captures d'écran
 
-à venir...
+![Gridarena](./screenshots/gridarena.png)
 
 ## Crédits des images
 
@@ -45,7 +45,7 @@ Ce projet est sous licence [MIT].
 | <img src="./src/resources/images/health.png" alt="ammo" width="50" height="50"> |                           Générateur d’image IA Bing                            |
 | <img src="./src/resources/images/barrel.png" alt="ammo" width="30" height="50"> |                           Générateur d’image IA Bing                            |
 |  <img src="./src/resources/images/wall.png" alt="ammo" width="50" height="50">  |                           Générateur d’image IA Bing                            |
-|  <img src="./src/resources/images/bomb.png" alt="ammo" width="50" height="50">  |                     [bomb](https://www.remove.bg/fr/upload)                     |
+|  <img src="./src/resources/images/bomb.png" alt="ammo" width="50" height="50">  |                                    [bomb]()                                     |
 |  <img src="./src/resources/images/ammo.png" alt="ammo" width="50" height="50">  |        [ammo - Freepik](https://fr.freepik.com/icone/munitions_3836821)         |
 | <img src="./src/resources/images/ground.png" alt="ammo" width="50" height="50"> | [décor - Cupnooble](https://cupnooble.itch.io/sprout-lands-asset-pack?download) |
 |  <img src="./src/resources/images/vert.png" alt="ammo" width="20" height="30">  |        [héros - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |

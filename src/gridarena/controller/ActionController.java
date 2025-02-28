@@ -11,9 +11,9 @@ import java.awt.event.*;
 import java.util.*;
 
 /**
- * Représente le controleur permettant à un joueur de faire une action (se déplacer, tirer, etc...).
+ * Représente le contrôleur permettant à un joueur de faire une action (se déplacer, tirer, etc...).
  * 
- * @author Emilien Huron.
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class ActionController extends JPanel implements ActionListener, ModelListener {
