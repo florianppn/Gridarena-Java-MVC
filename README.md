@@ -34,7 +34,7 @@ Par défaut une mine n’est visible que par celui qui l’a posé.
 
 ## Licence
 
-Ce projet est sous licence [MIT].
+Ce projet est sous licence [MIT](./LICENSE.md).
 
 ## Captures d'écran
 
