@@ -5,9 +5,8 @@ import gridarena.entity.hero.Hero;
 /**
  * Représente une mine.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
- * @see Explosive
  */
 public class Mine extends Explosive {
     

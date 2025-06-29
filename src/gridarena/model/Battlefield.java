@@ -10,9 +10,9 @@ import gridarena.model.fillgrid.*;
 import java.util.*;
 
 /**
- * Représente un champs de bataille.
+ * Représente un champ de bataille.
  *
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 2.0
  */
 public class Battlefield extends AbstractBattlefield {

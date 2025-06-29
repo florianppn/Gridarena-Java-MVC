@@ -1,6 +1,6 @@
 package gridarena.controller;
 
-import gridarena.controller.ia.*;
+import gridarena.controller.bot.*;
 import gridarena.entity.hero.*;
 import gridarena.model.*;
 import gridarena.model.fillgrid.*;
@@ -13,7 +13,7 @@ import java.util.*;
 /**
  * Représente le contrôleur mère du jeu.
  * 
- * @author Emilien Huron
+ * @author Emilien Huron.
  * @version 1.0
  */
 public class GameController implements Runnable {

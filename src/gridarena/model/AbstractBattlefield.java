@@ -4,12 +4,10 @@ import gridarena.entity.Entity;
 import gridarena.entity.hero.*;
 import gridarena.utils.AbstractListenableModel;
 
-import java.util.*;
-
 /**
  * Représente un champ de bataille.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
 */
 public abstract class AbstractBattlefield extends AbstractListenableModel {

@@ -4,8 +4,8 @@ import gridarena.entity.hero.Hero;
 
 /**
  * Représente un kit de soins.
- * 
- * @author Florian Pépin
+ *
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class MedicalKit extends Consumable {

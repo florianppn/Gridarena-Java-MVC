@@ -11,9 +11,9 @@ import java.awt.event.*;
 import java.util.*;
 
 /**
- * Représente le contrôleur permettant à un joueur de faire une action (se déplacer, tirer, etc...).
+ * Représente le contrôleur permettant à un joueur de faire une action (se déplacer, tirer, etc.).
  * 
- * @author Florian Pépin.
+ * @author Tom David.
  * @version 1.0
  */
 public class ActionController extends JPanel implements ActionListener, ModelListener {
@@ -21,11 +21,11 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
     private BattlefieldProxy battlefield;
     private GameController game;
     private PlayerGUI playerGUI;
-    private String selectedButton = "Move";
+    private String selectedButton = "Bouger";
     private ArrayList<JButton> actionButtons = new ArrayList<>();
     private ArrayList<JButton> moveButtons = new ArrayList<>();
     private HashMap<String, JLabel> leftAmmos = new HashMap<>();
-    
+
     public ActionController(BattlefieldProxy battlefield, GameController game, PlayerGUI playerGUI) {
         super(new BorderLayout());
         this.battlefield = battlefield;
@@ -46,19 +46,19 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
 
     /**
      * Crée les boutons d'actions.
-     * 
+     *
      * @param panel dans lequel les boutons seront ajoutés.
      * @param hero lié aux events des boutons.
      */
     private void createTopButtons(JPanel panel, Hero hero) {
         HashMap<String, Object> buttonValues = new HashMap<>();
-        buttonValues.put("Move", "∞");
-        buttonValues.put("Shoot", hero.getAmmoRemaining());
+        buttonValues.put("Bouger", "∞");
+        buttonValues.put("Tirer", hero.getAmmoRemaining());
         buttonValues.put("Mine", hero.getMineRemaining());
-        buttonValues.put("Bomb", hero.getBombRemaining());
-        buttonValues.put("Shield", hero.getShieldRemaining());
-        buttonValues.put("Ax", "∞");
-        buttonValues.put("Pass", "∞");
+        buttonValues.put("Bombe", hero.getBombRemaining());
+        buttonValues.put("Bouclier", hero.getShieldRemaining());
+        buttonValues.put("Hache", "∞");
+        buttonValues.put("Passer", "∞");
 
         for (String text : buttonValues.keySet()) {
             JPanel buttonPanel = new JPanel(new BorderLayout());
@@ -67,7 +67,7 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
                 button.setBackground(Color.ORANGE);
             }
             actionButtons.add(button);
-            JLabel label = new JLabel("Left" + ": " + buttonValues.get(text), SwingConstants.CENTER);
+            JLabel label = new JLabel("Réserve" + ": " + buttonValues.get(text), SwingConstants.CENTER);
             buttonPanel.add(button, BorderLayout.CENTER);
             buttonPanel.add(label, BorderLayout.SOUTH);
             panel.add(buttonPanel);
@@ -77,7 +77,7 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
 
     /**
      * Crée les boutons de déplacement.
-     * 
+     *
      * @param panel dans lequel les boutons seront ajoutés.
      */
     private void createMoveButtons(JPanel panel) {
@@ -96,7 +96,7 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
 
     /**
      * Créer un bouton.
-     * 
+     *
      * @param text à mettre dans le bouton.
      * @return un bouton.
      */
@@ -133,7 +133,7 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
             return;
         }
         boolean valideAction = false;
-        if (buttonText.equals("Pass")) {
+        if (buttonText.equals("Passer")) {
             valideAction = true;
         } else if (actionButtons.contains(sourceButton)) {
             selectedButton = buttonText;
@@ -143,23 +143,23 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
         }
         if (!valideAction) {
             switch (selectedButton) {
-                case "Shoot" :
+                case "Tirer":
                     this.useShoot(buttonText, hero);
                     valideAction = true;
                     break;
-                case "Mine" :
+                case "Mine":
                     valideAction = this.useExplosive(buttonText, hero, "mine");
                     break;
-                case "Bomb" :
+                case "Bombe":
                     valideAction = this.useExplosive(buttonText, hero, "bomb");
                     break;
-                case "Shield" :
+                case "Bouclier":
                     valideAction = this.useShield(buttonText, hero);
                     break;
-                case "Move" :
+                case "Bouger":
                     valideAction = this.useMove(buttonText, hero);
                     break;
-                case "Ax":
+                case "Hache":
                     this.useAx(buttonText, hero);
                     valideAction = true;
                     break;
@@ -193,9 +193,9 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
      */
     private void updateButtonEnabled() {
         for (JButton button : actionButtons) {
-            if (leftAmmos.get(button.getText()).getText().equals("Left: 0")) {
+            if (leftAmmos.get(button.getText()).getText().equals("Réserve: 0")) {
                 if (button.getText().equals(selectedButton)) {
-                    selectedButton = "Move";
+                    selectedButton = "Bouger";
                     updateButtonColors();
                     updateButtonStates(selectedButton);
                 }
@@ -214,31 +214,31 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
     private void updateButtonStates(String buttonText) {
         String[] validDirections;
         switch (buttonText) {
-            case "Move":
-            case "Ax":
-            case "Shoot":
-                if (leftAmmos.get(buttonText).getText().equals("Left: 0")) {
+            case "Bouger":
+            case "Hache":
+            case "Tirer":
+                if (leftAmmos.get(buttonText).getText().equals("Réserve: 0")) {
                     validDirections = new String[]{};
                     break;
                 }
                 validDirections = new String[]{"↑", "→", "↓", "←"};
                 break;
             case "Mine":
-            case "Bomb":
-                if (leftAmmos.get(buttonText).getText().equals("Left: 0")) {
+            case "Bombe":
+                if (leftAmmos.get(buttonText).getText().equals("Réserve: 0")) {
                     validDirections = new String[]{};
                     break;
                 }
                 validDirections = new String[]{"↑", "→", "↓", "←", "↖", "↗", "↘", "↙"};
                 break;
-            case "Shield":
-                if (leftAmmos.get(buttonText).getText().equals("Left: 0")) {
+            case "Bouclier":
+                if (leftAmmos.get(buttonText).getText().equals("Réserve: 0")) {
                     validDirections = new String[]{};
                     break;
                 }
                 validDirections = new String[]{"+"};
                 break;
-            case "Pass":
+            case "Passer":
                 validDirections = new String[]{};
                 break;
             default:
@@ -313,11 +313,11 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
 
     /**
      * Utiliser un explosif.
-     * 
+     *
      * @param direction dans laquelle le joueur veut poser un explosif.
      * @param hero qui souhaite poser un explosif.
      * @param explosive a poser.
-     * @return true si l'explosif a pu etre posé sinon false.
+     * @return true si l'explosif a pu être posé sinon false.
      */
 
     private boolean useExplosive(String direction, Hero hero, String explosive) {
@@ -338,7 +338,6 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
                 return this.battlefield.addExplosive(hero, "rd", explosive);
             case "↙":
                 return this.battlefield.addExplosive(hero, "ld", explosive);
-
             default:
                 return true;
         }
@@ -388,10 +387,10 @@ public class ActionController extends JPanel implements ActionListener, ModelLis
     @Override
     public void updatedModel(Object source) {
         Hero hero = this.battlefield.getHero();
-        leftAmmos.get("Mine").setText("Left: " + hero.getMineRemaining());
-        leftAmmos.get("Bomb").setText("Left: " + hero.getBombRemaining());
-        leftAmmos.get("Shield").setText("Left: " + hero.getShieldRemaining());
-        leftAmmos.get("Shoot").setText("Left: " + hero.getAmmoRemaining());
+        leftAmmos.get("Mine").setText("Réserve: " + hero.getMineRemaining());
+        leftAmmos.get("Bombe").setText("Réserve: " + hero.getBombRemaining());
+        leftAmmos.get("Bouclier").setText("Réserve: " + hero.getShieldRemaining());
+        leftAmmos.get("Tirer").setText("Réserve: " + hero.getAmmoRemaining());
     }
 
 }

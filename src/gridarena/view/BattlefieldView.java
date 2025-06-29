@@ -10,12 +10,11 @@ import gridarena.utils.ModelListener;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
 
 /**
  * Représente la vue de la grille de jeu.
  * 
- * @author Tom David
+ * @author Tom David et Florian Pépin.
  * @version 1.0
  */
 public class BattlefieldView extends JPanel implements ModelListener {
@@ -34,7 +33,7 @@ public class BattlefieldView extends JPanel implements ModelListener {
      * 
      * @param g Graphics
      * @param map du jeu.
-     * @param currentHero héro a montrer en surbrillance.
+     * @param currentHero héro à montrer en surbrillance.
      */
     public void displayMap(Graphics g, Entity[][] map, Hero currentHero) {
         g.setColor(Color.BLACK);
@@ -56,16 +55,16 @@ public class BattlefieldView extends JPanel implements ModelListener {
                         String imageUrl = map[i][j].getImageUrl();
                         Image img = new ImageIcon(getClass().getResource(imageUrl)).getImage();
                         if (map[i][j] instanceof Barrel) {
-                            g.drawImage(img, x + cellWidth / 3, y + cellHeight / 5, 13 * 2, 26 * 2, null);
+                            g.drawImage(img, x + cellWidth / 3 + 3, y + cellHeight / 5 - 6, 13 * 2, 26 * 2, null);
                         } else if (map[i][j] instanceof Wall) {
-                            g.drawImage(img, x, y, cellWidth, cellHeight, null);
+                            g.drawImage(img, x+8, y, cellWidth-15, cellHeight, null);
                         } else if (map[i][j] instanceof Explosive) {
-                            g.drawImage(img, x + cellWidth / 5, y + cellHeight / 5, 32*2, 32*2, null);
+                            g.drawImage(img, x + cellWidth / 5, y + cellHeight / 5, cellWidth-20, cellHeight-20, null);
                         } else if (map[i][j] instanceof Consumable) {
                             g.drawImage(img, x + cellWidth / 5, y + cellHeight / 5, 50, 50, null);
                         } else if(map[i][j] instanceof Hero) {
                             Hero hero = (Hero) map[i][j];
-                            g.drawImage(img, x + (cellWidth / 2)- img.getWidth(null)/2, y + (cellHeight / 2)- img.getHeight(null)/2, 13 * 2, 26 * 2, null);
+                            g.drawImage(img, x+20, y+9, 13 * 2, 26 * 2, null);
                         }
                     }
 

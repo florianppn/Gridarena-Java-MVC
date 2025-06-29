@@ -1,6 +1,6 @@
 gridarena
 gridarena.controller
-gridarena.controller.ia
+gridarena.controller.bot
 gridarena.entity
 gridarena.entity.consumable
 gridarena.entity.environment

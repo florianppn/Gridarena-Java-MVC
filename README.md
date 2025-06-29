@@ -1,7 +1,10 @@
-# Jeu de combat multijoueurs
+# Jeu de combat au tour par tour
 
 ## Description
-Ce jeu de combat repose sur des mécaniques stratégiques au tour par tour, où les joueurs doivent utiliser tactique et planification pour survivre et éliminer les adversaires.
+
+Ce jeu est un projet universitaire fait en collaboration avec [Tom David](https://github.com/kitoutou999) et Emilien Huron.
+Le but de ce projet était de mettre en place une architecture MVC robuste et d'intégrer diverses design patterns.
+Parmis les patterns utilisés on retrouve le pattern observer, le pattern proxy, le pattern adaptater, le pattern factory method et la pattern strategy.
 
 ## Règles du jeu
 
@@ -35,17 +38,23 @@ Ce projet est sous licence [MIT].
 
 ## Captures d'écran
 
-![Gridarena](./screenshots/gridarena.png)
+![vue-joueur](./screenshots/vue-joueur.png)
+
+![vue-jeu-complet](./screenshots/vue-jeu-complet.png)
+
+![choisir personnage](./screenshots/choisir-personnage.png)
 
 ## Crédits des images
 
-|                                      image                                      |                                Auteur / Licence                                 |
-|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-|  <img src="./src/resources/images/mine.png" alt="ammo" width="50" height="50">  |                           Générateur d’image IA Bing                            |
-| <img src="./src/resources/images/health.png" alt="ammo" width="50" height="50"> |                           Générateur d’image IA Bing                            |
-| <img src="./src/resources/images/barrel.png" alt="ammo" width="30" height="50"> |                           Générateur d’image IA Bing                            |
-|  <img src="./src/resources/images/wall.png" alt="ammo" width="50" height="50">  |                           Générateur d’image IA Bing                            |
-|  <img src="./src/resources/images/bomb.png" alt="ammo" width="50" height="50">  |                                    [bomb]()                                     |
-|  <img src="./src/resources/images/ammo.png" alt="ammo" width="50" height="50">  |        [ammo - Freepik](https://fr.freepik.com/icone/munitions_3836821)         |
-| <img src="./src/resources/images/ground.png" alt="ammo" width="50" height="50"> | [décor - Cupnooble](https://cupnooble.itch.io/sprout-lands-asset-pack?download) |
-|  <img src="./src/resources/images/vert.png" alt="ammo" width="20" height="30">  |        [héros - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
+|                                      image                                        |                                Auteur / Licence                                 |
+|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|  <img src="./src/resources/images/mine.png" alt="mine" width="50" height="50">    |              [mine - Freepik](https://fontawesome.com/icons/)                   |
+| <img src="./src/resources/images/health.png" alt="health" width="50" height="50"> |              [health - Freepik](https://fontawesome.com/icons/)                 |
+| <img src="./src/resources/images/barrel.png" alt="barrel" width="30" height="50"> |              [barrel - Freepik](https://fontawesome.com/icons/)                 |
+|  <img src="./src/resources/images/wall.png" alt="wall" width="50" height="50">    |              [wall - Freepik](https://fontawesome.com/icons/)                   |
+|  <img src="./src/resources/images/bomb.png" alt="bomb" width="50" height="50">    |              [bomb - Freepik](https://fontawesome.com/icons/)                   |
+|  <img src="./src/resources/images/ammo.png" alt="ammo" width="50" height="50">    |              [ammo - Freepik](https://fr.freepik.com/icone/munitions_3836821)   |
+| <img src="./src/resources/images/ground.png" alt="ground" width="50" height="50"> | [décor - Cupnooble](https://cupnooble.itch.io/sprout-lands-asset-pack?download) |
+|  <img src="./src/resources/images/vert.png" alt="vert" width="20" height="30">    |   [héros vert - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
+|  <img src="./src/resources/images/violet.png" alt="violet" width="20" height="30">|   [héros violet - sscary.itch](https://sscary.itch.io/the-adventurer-male)      |
+|  <img src="./src/resources/images/blue.png" alt="bleu" width="20" height="30">    |   [héros bleu - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |

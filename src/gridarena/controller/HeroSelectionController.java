@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 /**
  * Représente le contrôleur permettant de sélectionner son Hero au début de la partie.
  * 
- * @author Emilien Huron
+ * @author Emilien Huron.
  * @version 1.0
  */
 public class HeroSelectionController extends JPanel implements ActionListener {

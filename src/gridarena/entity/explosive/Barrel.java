@@ -3,7 +3,7 @@ package gridarena.entity.explosive;
 /**
  * Représente un barrel explosif.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class Barrel extends Explosive {

@@ -8,12 +8,11 @@ import gridarena.view.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 /**
  * Représente l'interface utilisateur d'un joueur graphique.
  * 
- * @author Tom David
+ * @author Tom David et Florian Pépin.
  * @version 1.0
  */
 public class PlayerGUI extends JFrame implements PlayerWithLeaderboard {
@@ -22,7 +21,6 @@ public class PlayerGUI extends JFrame implements PlayerWithLeaderboard {
     private BattlefieldProxy battlefield;
     private String name;
     private boolean myTurn;
-    private JFrame frame;
 
     public PlayerGUI(GameController gameController, BattlefieldProxy battlefield, String name) {
         super("Grid Arena : "+name);
@@ -31,7 +29,7 @@ public class PlayerGUI extends JFrame implements PlayerWithLeaderboard {
         this.name = name;
         this.myTurn = false;
         
-        this.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.getRootPane().setBorder(BorderFactory.createMatteBorder(3, 3, 3, 3, Color.BLACK));
         this.setSize(800, 600);
         this.setLayout(new BorderLayout());

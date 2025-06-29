@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * Représente la stratégie avec modulo.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class ModuloFillStrategy implements FillStrategy {

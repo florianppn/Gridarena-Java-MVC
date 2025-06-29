@@ -5,7 +5,7 @@ import gridarena.utils.AbstractListenableModel;
 /**
  * Représente une entité dans la grille du jeu.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public abstract class Entity extends AbstractListenableModel {

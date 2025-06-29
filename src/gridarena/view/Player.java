@@ -3,7 +3,7 @@ package gridarena.view;
 /**
  * Représente le joueur qui joue au jeu.
  * 
- * @author Tom David
+ * @author Tom David.
  * @version 1.0
  */
 public interface Player {

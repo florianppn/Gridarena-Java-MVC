@@ -7,6 +7,7 @@
     <property name="build.dir" value="classes" />
     <property name="doc.dir" value="doc" />
     <property name="dist.dir" value="dist" />
+    <property name="config" value="${dist.dir}/config.properties" />
     <property name="application" value="${dist.dir}/gridarena.jar" />
 
     <target name="compile" depends="clean">
@@ -17,6 +18,7 @@
         <delete dir="${build.dir}" />
         <mkdir dir="${build.dir}" />
         <delete file="${application}" />
+        <delete file="${config}" />
     </target>
 
     <target name="dist" depends="compile">
@@ -29,6 +31,9 @@
                 <attribute name="Main-Class" value="gridarena.Main"/>
             </manifest>
         </jar>
+        <copy todir="${dist.dir}" flatten="true">
+            <fileset dir="${src.dir}" includes="**/config.properties"/>
+        </copy>
     </target>
 
     <target name="run" depends="dist">

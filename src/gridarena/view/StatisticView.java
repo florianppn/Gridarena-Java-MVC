@@ -10,7 +10,7 @@ import java.awt.*;
 /**
  * Représente la vue des statistiques du joueur.
  * 
- * @author Tom David
+ * @author Tom David.
  * @version 1.0
  */
 public class StatisticView extends JPanel implements ModelListener {

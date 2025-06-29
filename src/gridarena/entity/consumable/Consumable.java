@@ -6,7 +6,7 @@ import gridarena.entity.hero.Hero;
 /**
  * Représente un consommable.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public abstract class Consumable extends Entity {

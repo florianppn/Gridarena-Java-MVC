@@ -8,7 +8,7 @@ import gridarena.utils.ModelListener;
 /**
  * Représente le proxy permettant de filtrer la grille d'un joueur.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class BattlefieldProxy extends AbstractBattlefield implements ModelListener {

@@ -1,7 +1,7 @@
 /**
- * Ce package contient les interface graphiques du jeu.
+ * Ce package contient les interfaces graphiques du jeu.
  * 
- * @author Tom David
+ * @author Tom David et Florian Pépin
  * @version 1.0
  */
 package gridarena.view.gui;

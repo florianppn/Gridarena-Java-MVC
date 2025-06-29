@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * Représente une stratégie avec des placements aléatoires.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class RandomFillStrategy implements FillStrategy {

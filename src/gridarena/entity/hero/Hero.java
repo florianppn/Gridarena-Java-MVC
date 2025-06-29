@@ -8,7 +8,7 @@ import gridarena.entity.explosive.Mine;
 /**
  * Représente le Hero que le joueur incarne.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class Hero extends Entity {

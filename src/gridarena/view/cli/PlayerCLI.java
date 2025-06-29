@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * Représente l'interface utilisateur d'un joueur en ligne de commandes.
  *
- * @author Emilien Huron
+ * @author Emilien Huron.
  * @version 1.0
  */
 public class PlayerCLI implements PlayerWithLeaderboard {

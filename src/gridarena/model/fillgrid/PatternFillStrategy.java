@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * Représente la stratégie avec un pattern prédéfini.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class PatternFillStrategy implements FillStrategy {

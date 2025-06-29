@@ -4,9 +4,9 @@ import gridarena.utils.ModelListener;
 import javax.swing.table.AbstractTableModel;
 
 /**
- * Représente un adapter d'un groupe de héros vers un JTable.
+ * Représente un adapteur d'un groupe de héros vers un JTable.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class GroupHeroesToTableModelAdapter extends AbstractTableModel implements ModelListener {

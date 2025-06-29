@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Représente un modèle écoutable.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public abstract class AbstractListenableModel implements ListenableModel {

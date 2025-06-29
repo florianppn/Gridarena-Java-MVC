@@ -9,7 +9,7 @@ import java.awt.*;
 /**
  * Représente la vue de la fin du jeu.
  * 
- * @author Tom David
+ * @author Tom David et Florian Pépin.
  * @version 1.0
  */
 public class LeaderboardView extends JPanel {

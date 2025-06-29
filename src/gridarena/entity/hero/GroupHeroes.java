@@ -5,7 +5,7 @@ import gridarena.utils.*;
 /**
  * Représente un groupe de personnes.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public interface GroupHeroes extends ListenableModel {
@@ -15,7 +15,7 @@ public interface GroupHeroes extends ListenableModel {
      * 
      * @return la taille du groupe.
      */
-    public int getSize();
+    int getSize();
     
     /**
      * Obtenir un héro du groupe avec l'indice.
@@ -23,6 +23,6 @@ public interface GroupHeroes extends ListenableModel {
      * @param index où se trouve le héro.
      * @return un héro.
      */
-    public Hero getHero(int index);
+    Hero getHero(int index);
     
 }

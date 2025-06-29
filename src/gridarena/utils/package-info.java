@@ -1,8 +1,7 @@
 /**
- * Ce package contient les outils utilent dans différents packages.
- * Ce sont des outils vu en cours.
+ * Ce package contient les outils utilisaient dans différents packages.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 package gridarena.utils;

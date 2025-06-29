@@ -1,16 +1,16 @@
 package gridarena;
 
 import gridarena.controller.GameController;
-import gridarena.controller.ia.*;
+import gridarena.controller.bot.*;
 import gridarena.model.fillgrid.*;
 
-import java.io.IOException;
-import java.util.Properties;
+import java.io.*;
+import java.util.*;
 
 /**
  * Représente la classe principale qui lance le jeu.
  *
- * @author Florian Pépin, Tom David et Emilien Huron.
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class Main {
@@ -25,7 +25,7 @@ public class Main {
     static {
         try {
             Properties prop = new Properties();
-            prop.load(GameController.class.getResourceAsStream("/resources/config.properties"));
+            prop.load(new FileInputStream("config.properties"));
             SHOW_OVERVIEW = Boolean.parseBoolean(prop.getProperty("SHOW_OVERVIEW", "false"));
             GUI_PLAYERS = Integer.parseInt(prop.getProperty("GUI_PLAYERS"));
             CLI_PLAYERS = Integer.parseInt(prop.getProperty("CLI_PLAYERS"));
@@ -36,14 +36,22 @@ public class Main {
             AMMO_KITS = Integer.parseInt(prop.getProperty("AMMO_KITS"));
             BARRELS = Integer.parseInt(prop.getProperty("BARRELS"));
         } catch (IOException ex) {
-            throw new Error("Erreur lors du chargement du fichier de configuration : " + ex.getMessage());
+            SHOW_OVERVIEW = true;
+            GUI_PLAYERS = 2;
+            CLI_PLAYERS = 0;
+            BOT_PLAYERS = 1;
+            SIZE_GRID = 7;
+            WALLS = 3;
+            MEDICAL_KITS = 4;
+            AMMO_KITS = 4;
+            BARRELS = 3;
         }
     }
     
     /**
      * Lancer le jeu.
      * 
-     * @param args
+     * @param args les arguments de la ligne de commande (non utilisés).
      */
     public static void main(String[] args) {
         if ((GUI_PLAYERS+CLI_PLAYERS+BOT_PLAYERS)*2 > SIZE_GRID || WALLS > SIZE_GRID || MEDICAL_KITS > SIZE_GRID || AMMO_KITS > SIZE_GRID || BARRELS > SIZE_GRID) {

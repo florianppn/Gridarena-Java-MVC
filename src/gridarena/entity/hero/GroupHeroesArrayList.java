@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Représente un groupe de héro dans une ArrayList.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class GroupHeroesArrayList extends AbstractListenableModel implements GroupHeroesEditable, ModelListener {

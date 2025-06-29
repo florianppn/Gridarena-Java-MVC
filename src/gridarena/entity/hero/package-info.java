@@ -1,7 +1,7 @@
 /**
- * Ce package contient les heros présent dans la grille de jeu.
+ * Ce package contient les héros présents dans la grille de jeu.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 package gridarena.entity.hero;

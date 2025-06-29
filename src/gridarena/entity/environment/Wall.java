@@ -5,7 +5,7 @@ import gridarena.entity.Entity;
 /**
  * Représente un mur.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class Wall extends Entity {

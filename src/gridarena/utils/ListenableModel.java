@@ -3,7 +3,7 @@ package gridarena.utils;
 /**
  * Représente un modèle écoutable.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public interface ListenableModel {

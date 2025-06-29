@@ -5,7 +5,7 @@ import gridarena.entity.hero.Hero;
 /**
  * Représente une boite de munitions.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class AmmoKit extends Consumable {

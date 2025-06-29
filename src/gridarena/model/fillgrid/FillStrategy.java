@@ -6,7 +6,7 @@ import gridarena.entity.hero.Hero;
 /**
  * Représente le remplissage d'une grille avec les entités de base.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public interface FillStrategy {

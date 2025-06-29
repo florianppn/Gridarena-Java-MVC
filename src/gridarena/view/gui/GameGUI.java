@@ -10,7 +10,7 @@ import java.awt.*;
 /**
  * Représente l'interface de jeu ayant une vue globale de toutes les entités.
  * 
- * @author Florian Pépin
+ * @author Florian Pépin.
  * @version 1.0
  */
 public class GameGUI extends JFrame {
@@ -37,8 +37,9 @@ public class GameGUI extends JFrame {
 
     /**
      * Crée une interface graphique general.
-     * @param battlefield
-     * @return
+     *
+     * @param battlefield le champ de bataille à afficher.
+     * @return une instance de GameGUI.
      */
     public static GameGUI createGameGUI(Battlefield battlefield) {
         return new GameGUI(battlefield);
