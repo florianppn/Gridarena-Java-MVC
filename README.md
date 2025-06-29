@@ -6,6 +6,15 @@ Ce jeu est un projet universitaire fait en collaboration avec [Tom David](https:
 Le but de ce projet était de mettre en place une architecture MVC robuste et d'intégrer diverses design patterns.
 Parmis les patterns utilisés on retrouve le pattern observer, le pattern proxy, le pattern adaptater, le pattern factory method et la pattern strategy.
 
+## Comment lancer l'application
+
++ ANT : Ouvrir le terminal à la racine du projet et lancez la commande `ant run`.
+
++ WINDOWS : Ouvrir le terminal dans le dossier `dist/` et lancez l'exécutable `run.bat`.
+
++ LINUX : Ouvrir le terminal dans le dossier `dist/` et lancez l'exécutable `run.sh`.
+
+
 ## Règles du jeu
 
 Chaque joueur peut:
@@ -58,3 +67,7 @@ Ce projet est sous licence [MIT](./LICENSE.md).
 |  <img src="./src/resources/images/vert.png" alt="vert" width="20" height="30">    |   [héros vert - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
 |  <img src="./src/resources/images/violet.png" alt="violet" width="20" height="30">|   [héros violet - sscary.itch](https://sscary.itch.io/the-adventurer-male)      |
 |  <img src="./src/resources/images/blue.png" alt="bleu" width="20" height="30">    |   [héros bleu - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
+
+## Auteurs
+
+[Tom David](https://github.com/kitoutou999), Emilien Huron et [Florian Pépin](https://github.com/florianppn).
