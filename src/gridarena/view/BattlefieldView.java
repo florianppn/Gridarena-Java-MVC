@@ -55,7 +55,7 @@ public class BattlefieldView extends JPanel implements ModelListener {
                         String imageUrl = map[i][j].getImageUrl();
                         Image img = new ImageIcon(getClass().getResource(imageUrl)).getImage();
                         if (map[i][j] instanceof Barrel) {
-                            g.drawImage(img, x + cellWidth / 3 + 3, y + cellHeight / 5 - 6, 13 * 2, 26 * 2, null);
+                            g.drawImage(img, (x + cellWidth / 2)-20, y + cellHeight / 5 - 6, 22 * 2, 26 * 2, null);
                         } else if (map[i][j] instanceof Wall) {
                             g.drawImage(img, x+8, y, cellWidth-15, cellHeight, null);
                         } else if (map[i][j] instanceof Explosive) {
