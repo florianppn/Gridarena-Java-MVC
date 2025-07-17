@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce jeu est un projet universitaire fait en collaboration avec [Tom David](https://github.com/kitoutou999) et Emilien Huron.
+Ce jeu est un projet universitaire.
 Le but de ce projet était de mettre en place une architecture MVC robuste et d'intégrer diverses design patterns.
 Parmis les patterns utilisés on retrouve le pattern observer, le pattern proxy, le pattern adaptater, le pattern factory method et la pattern strategy.
 
@@ -68,6 +68,8 @@ Ce projet est sous licence [MIT](./LICENSE.md).
 |  <img src="./src/resources/images/violet.png" alt="violet" width="20" height="30">|   [héros violet - sscary.itch](https://sscary.itch.io/the-adventurer-male)      |
 |  <img src="./src/resources/images/blue.png" alt="bleu" width="20" height="30">    |   [héros bleu - sscary.itch](https://sscary.itch.io/the-adventurer-male)        |
 
-## Auteurs
+## Contributeurs
 
-[Tom David](https://github.com/kitoutou999), Emilien Huron et [Florian Pépin](https://github.com/florianppn).
++ [Tom David](https://github.com/kitoutou999)
+
++ Emilien Huron
