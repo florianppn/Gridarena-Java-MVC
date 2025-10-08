@@ -4,7 +4,7 @@
 
 Ce jeu est un projet universitaire.
 Le but de ce projet était de mettre en place une architecture MVC robuste et d'intégrer diverses design patterns.
-Parmis les patterns utilisés on retrouve le pattern observer, le pattern proxy, le pattern adaptater, le pattern factory method et le pattern strategy.
+Parmis les patterns utilisés on retrouve le pattern observer, le pattern proxy, le pattern adapter, le pattern factory method et le pattern strategy.
 
 ## Comment lancer l'application
 
